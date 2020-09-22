@@ -1,12 +1,14 @@
 import pymongo
 import os
+
+# Setup the enviroment varible for the secret key
 from os import path
 if path.exists("env.py"):
   import env 
 
-# Define the varibles for connection
-
 MONGODB_URI = os.environ.get('MONGO_URI')
+
+# Defines the varibles
 DBS_NAME = "myTestDB"
 COLLECTION_NAME = "myFirstMDB"
 
